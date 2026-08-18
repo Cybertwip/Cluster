@@ -1,0 +1,29 @@
+{
+  "description": "Illustrative software-equivalent baselines for one 8-bit circuit evaluation. Replace with measurements from target boards.",
+  "baselines": [
+    {
+      "name": "ATmega328P 16 MHz",
+      "clock_hz": 16000000,
+      "cycles_per_token": 120000,
+      "power_watts": 0.2
+    },
+    {
+      "name": "Cortex-M0+ 48 MHz",
+      "clock_hz": 48000000,
+      "cycles_per_token": 60000,
+      "power_watts": 0.08
+    },
+    {
+      "name": "Cortex-M4F 120 MHz",
+      "clock_hz": 120000000,
+      "cycles_per_token": 20000,
+      "power_watts": 0.18
+    },
+    {
+      "name": "Cortex-M7 600 MHz",
+      "clock_hz": 600000000,
+      "cycles_per_token": 8000,
+      "power_watts": 0.75
+    }
+  ]
+}

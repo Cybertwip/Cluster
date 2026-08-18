@@ -1,0 +1,59 @@
+* Entanglement / superposition / collapse behavioral reference netlist
+.title Classical analog-inspired entanglement circuit
+.param VCC=5
+.param FA=8000
+.param FB=8200
+
+V_SUPPLY vcc 0 {VCC}
+V_OSC_A osc_a 0 PULSE(0 {VCC} 0 1n 1n 62.5u 125u)
+V_OSC_B osc_b 0 PULSE(0 {VCC} 31.25u 1n 1n 60.98u 121.95u)
+V_CTRL ctrl 0 0.5
+V_MEASURE measure 0 PULSE(0 {VCC} 0 1n 1n 500u 1m)
+
+R_OSC_A osc_a ent_a_sense 1k
+R_OSC_B osc_b ent_b_sense 1k
+C_OSC_A ent_a_sense 0 10n
+C_OSC_B ent_b_sense 0 10n
+R_COUPLE ent_a_sense ent_b_sense 10k
+D_COUPLE_A ent_a_sense ent_b_sense D_SIGNAL
+D_COUPLE_B ent_b_sense ent_a_sense D_SIGNAL
+
+B_ENT_A ent_a 0 V={2.5+2.0*tanh((V(ent_a_sense)-2.5)/2.0+0.20*(V(ent_b_sense)-2.5)/2.0)}
+B_ENT_B ent_b 0 V={2.5+2.0*tanh((V(ent_b_sense)-2.5)/2.0+0.20*(V(ent_a_sense)-2.5)/2.0)}
+
+R_SUP_A ent_a sup_a 10k
+R_SUP_B ent_b sup_b 10k
+B_SUP superposition 0 V={(1-V(ctrl))*0.5*(V(ent_a)+V(ent_b))+V(ctrl)*V(ent_a)}
+C_SUP superposition 0 1n
+
+B_COLLAPSE collapsed 0 V={5*u(V(superposition)-2.5)}
+R_SAMPLE collapsed sample_hold 1k
+C_SAMPLE sample_hold 0 1u
+B_MEASURED measured 0 V={V(sample_hold)}
+
+R_IN0 input0 0 1Meg
+R_IN1 input1 0 1Meg
+R_IN2 input2 0 1Meg
+R_IN3 input3 0 1Meg
+R_IN4 input4 0 1Meg
+R_IN5 input5 0 1Meg
+R_IN6 input6 0 1Meg
+R_IN7 input7 0 1Meg
+
+B_LED0 led0 0 V={5*u(V(measured)-2.5)}
+B_LED1 led1 0 V={5*u(V(superposition)-2.5)}
+B_LED2 led2 0 V={5*u(V(ent_a)-2.5)}
+B_LED3 led3 0 V={5*u(V(ent_b)-2.5)}
+B_LED4 led4 0 V={5*u(V(input0)-2.5)}
+B_LED5 led5 0 V={5*u(V(input1)-2.5)}
+B_LED6 led6 0 V={5*u(V(input2)-2.5)}
+B_LED7 led7 0 V={5*u(V(input3)-2.5)}
+
+.model D_SIGNAL D(Is=1n N=1.8 Rs=2)
+.control
+set filetype=ascii
+tran 1u 2m 0 1u
+write entanglement.raw v(ent_a) v(ent_b) v(superposition) v(sample_hold) v(measured)
+.endc
+.end
+

@@ -1,0 +1,379 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "7b695c1e-9de5-46d7-bd23-e5e9ae9c5c8f")
+	(paper "A5")
+	(title_block
+		(title "Classical Analog-Inspired Entanglement / Superposition Circuit")
+		(date "2026-08-18")
+		(rev "1.0")
+		(company "Functional reconstruction from entanglement.pdf")
+	)
+	(lib_symbols)
+	(text "CLASSICAL ANALOG-INSPIRED ENTANGLEMENT / SUPERPOSITION CIRCUIT"
+		(exclude_from_sim no)
+		(at 18 8 0)
+		(effects
+			(font
+				(size 2 2)
+			)
+			(justify left bottom)
+		)
+		(uuid "2f6344cc-4be8-481b-a5c0-53eec755b80b")
+	)
+	(text "5 V / 45 mA functional reconstruction; analog levels are represented as 0..5 V features."
+		(exclude_from_sim no)
+		(at 18 11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "64da80b2-5aa8-448b-b0e0-e3f42903863b")
+	)
+	(text "INPUT BUS"
+		(exclude_from_sim no)
+		(at 15 28 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left bottom)
+		)
+		(uuid "1d0c4ddf-05fc-4da2-9e64-64f0ab404def")
+	)
+	(text "OSCILLATORS"
+		(exclude_from_sim no)
+		(at 37 23 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+			)
+			(justify left bottom)
+		)
+		(uuid "b3e639e6-971b-4d6b-9cf9-23d72b2c7775")
+	)
+	(text "ENTANGLEMENT"
+		(exclude_from_sim no)
+		(at 37 42 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+			)
+			(justify left bottom)
+		)
+		(uuid "d910ca2e-c1b4-4af0-9a8c-2de6245e76c0")
+	)
+	(text "SUPERPOSITION"
+		(exclude_from_sim no)
+		(at 64 29 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc5097b3-4210-4e5c-9b98-6d8538ab30d0")
+	)
+	(text "COLLAPSE"
+		(exclude_from_sim no)
+		(at 64 48 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5daffda-b2bd-480d-879c-e946c1f11f29")
+	)
+	(text "LED OUTPUT"
+		(exclude_from_sim no)
+		(at 90 29 0)
+		(effects
+			(font
+				(size 1.35 1.35)
+			)
+			(justify left bottom)
+		)
+		(uuid "9c36c00a-44c4-4773-99ac-242b2e2bfb33")
+	)
+	(text "Named nets match kicad/entanglement.cir and sim/entanglement_sim.py."
+		(exclude_from_sim no)
+		(at 18 69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2b27c33-a29b-4f1b-bb19-e8f84a3a5d49")
+	)
+	(wire
+		(pts (xy 18 30) (xy 29 30))
+		(stroke (width 0) (type solid))
+		(uuid "a1018fe5-f4e7-4fed-9d4b-0ae15d0c8b07")
+	)
+	(wire
+		(pts (xy 29 30) (xy 29 24))
+		(stroke (width 0) (type solid))
+		(uuid "b8f3c4ca-8f24-4e2a-b218-22548d86b7de")
+	)
+	(wire
+		(pts (xy 29 24) (xy 36 24))
+		(stroke (width 0) (type solid))
+		(uuid "ef3eaee2-fda5-49b3-8bd2-2b9e2eeebf21")
+	)
+	(wire
+		(pts (xy 29 30) (xy 29 44))
+		(stroke (width 0) (type solid))
+		(uuid "9ae0ef8f-26a3-4573-97d8-35b19fd5102f")
+	)
+	(wire
+		(pts (xy 29 44) (xy 36 44))
+		(stroke (width 0) (type solid))
+		(uuid "bfc8a7fc-79ec-487b-bc1c-02530f84f18a")
+	)
+	(wire
+		(pts (xy 53 24) (xy 60 24))
+		(stroke (width 0) (type solid))
+		(uuid "3e4b25c6-fc3b-4f50-859f-b0a76e806360")
+	)
+	(wire
+		(pts (xy 60 24) (xy 60 30))
+		(stroke (width 0) (type solid))
+		(uuid "7a8ef78e-5191-4562-9acf-25c17f5530e8")
+	)
+	(wire
+		(pts (xy 60 30) (xy 63 30))
+		(stroke (width 0) (type solid))
+		(uuid "9e28c3f4-ae5f-417e-8e0a-50bd3d093006")
+	)
+	(wire
+		(pts (xy 53 44) (xy 60 44))
+		(stroke (width 0) (type solid))
+		(uuid "327b2170-bd4b-4839-93da-553c7706a0e3")
+	)
+	(wire
+		(pts (xy 60 44) (xy 60 30))
+		(stroke (width 0) (type solid))
+		(uuid "a54a53b3-98f9-4214-a37b-49bd38473b6e")
+	)
+	(wire
+		(pts (xy 78 30) (xy 88 30))
+		(stroke (width 0) (type solid))
+		(uuid "bdcf9ca9-1600-407a-bfdd-d1c233579142")
+	)
+	(wire
+		(pts (xy 88 30) (xy 88 37))
+		(stroke (width 0) (type solid))
+		(uuid "cc63c830-8772-4b4a-a9d4-b92e0f6a4dd4")
+	)
+	(wire
+		(pts (xy 88 37) (xy 91 37))
+		(stroke (width 0) (type solid))
+		(uuid "1bb9838a-50f8-4ca0-b8ff-1685d4414190")
+	)
+	(wire
+		(pts (xy 78 47) (xy 88 47))
+		(stroke (width 0) (type solid))
+		(uuid "d9a7dd22-324e-43af-b417-04764162d7a2")
+	)
+	(wire
+		(pts (xy 88 47) (xy 88 37))
+		(stroke (width 0) (type solid))
+		(uuid "38152977-8c9c-4ee9-a817-2156a36b7e84")
+	)
+	(wire
+		(pts (xy 88 37) (xy 88 55))
+		(stroke (width 0) (type solid))
+		(uuid "e2b7b57b-4d49-40ce-9255-cf83af2283cb")
+	)
+	(wire
+		(pts (xy 88 55) (xy 91 55))
+		(stroke (width 0) (type solid))
+		(uuid "f4d49bc1-9f3b-40aa-a0c5-1b4b58b27ec3")
+	)
+	(wire
+		(pts (xy 12 18) (xy 12 64))
+		(stroke (width 0) (type solid))
+		(uuid "d8e236d5-6f11-4e86-bb10-f1e6b8ebbb4c")
+	)
+	(wire
+		(pts (xy 12 64) (xy 110 64))
+		(stroke (width 0) (type solid))
+		(uuid "b9fe0c8a-296e-4c90-b4d2-d6c9fcd03afc")
+	)
+	(wire
+		(pts (xy 110 64) (xy 110 18))
+		(stroke (width 0) (type solid))
+		(uuid "c5d6b5c9-c3c7-4452-b5f8-66671ed66f1e")
+	)
+	(wire
+		(pts (xy 110 18) (xy 12 18))
+		(stroke (width 0) (type solid))
+		(uuid "1fcf37f7-f2bf-4daa-8582-df90b5c8b5b6")
+	)
+	(label "INPUT[7:0]"
+		(at 18 30 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "be44d68d-9dd0-4b9c-bf17-f93f7f2b0963")
+	)
+	(label "OSC_A"
+		(at 36 24 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "0a47b601-0ee7-4b00-88af-cb324864b0a0")
+	)
+	(label "OSC_B"
+		(at 36 44 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "6cfbbca7-7996-4f30-b9f4-a79d75f1c06d")
+	)
+	(label "ENT_A / ENT_B"
+		(at 53 24 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "0fa68123-a9a0-47bc-9b96-e40c8470429a")
+	)
+	(label "SUPERPOSITION"
+		(at 78 30 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "edbcd678-3db3-4a68-91e0-a1afdbb3926e")
+	)
+	(label "COLLAPSE"
+		(at 78 47 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "beeb8407-0f7a-425c-a79e-8a21042c1e87")
+	)
+	(label "LED0..LED7"
+		(at 91 55 0)
+		(effects (font (size 1.27 1.27)) (justify left bottom))
+		(uuid "ac309890-3149-4c11-8ad4-7b7bfdff4fd7")
+	)
+	(wire
+		(pts (xy 12 22) (xy 30 22))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0011111-1111-4111-8111-111111111111")
+	)
+	(wire
+		(pts (xy 30 22) (xy 30 54))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0022222-2222-4222-8222-222222222222")
+	)
+	(wire
+		(pts (xy 30 54) (xy 12 54))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0033333-3333-4333-8333-333333333333")
+	)
+	(wire
+		(pts (xy 12 54) (xy 12 22))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0044444-4444-4444-8444-444444444444")
+	)
+	(wire
+		(pts (xy 34 20) (xy 58 20))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0055555-5555-4555-8555-555555555555")
+	)
+	(wire
+		(pts (xy 58 20) (xy 58 32))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0066666-6666-4666-8666-666666666666")
+	)
+	(wire
+		(pts (xy 58 32) (xy 34 32))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0077777-7777-4777-8777-777777777777")
+	)
+	(wire
+		(pts (xy 34 32) (xy 34 20))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0088888-8888-4888-8888-888888888888")
+	)
+	(wire
+		(pts (xy 34 38) (xy 58 38))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0099999-9999-4999-8999-999999999999")
+	)
+	(wire
+		(pts (xy 58 38) (xy 58 50))
+		(stroke (width 0.3) (type solid))
+		(uuid "b00aaaaa-aaaa-4aaa-8aaa-aaaaaaaaaaaa")
+	)
+	(wire
+		(pts (xy 58 50) (xy 34 50))
+		(stroke (width 0.3) (type solid))
+		(uuid "b00bbbbb-bbbb-4bbb-8bbb-bbbbbbbbbbbb")
+	)
+	(wire
+		(pts (xy 34 50) (xy 34 38))
+		(stroke (width 0.3) (type solid))
+		(uuid "b00ccccc-cccc-4ccc-8ccc-cccccccccccc")
+	)
+	(wire
+		(pts (xy 62 24) (xy 80 24))
+		(stroke (width 0.3) (type solid))
+		(uuid "b00ddddd-dddd-4ddd-8ddd-dddddddddddd")
+	)
+	(wire
+		(pts (xy 80 24) (xy 80 36))
+		(stroke (width 0.3) (type solid))
+		(uuid "b00eeeee-eeee-4eee-8eee-eeeeeeeeeeee")
+	)
+	(wire
+		(pts (xy 80 36) (xy 62 36))
+		(stroke (width 0.3) (type solid))
+		(uuid "b00fffff-ffff-4fff-8fff-ffffffffffff")
+	)
+	(wire
+		(pts (xy 62 36) (xy 62 24))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0100000-0000-4000-8000-000000000000")
+	)
+	(wire
+		(pts (xy 62 43) (xy 80 43))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0111111-1111-4111-8111-111111111112")
+	)
+	(wire
+		(pts (xy 80 43) (xy 80 55))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0122222-2222-4222-8222-222222222223")
+	)
+	(wire
+		(pts (xy 80 55) (xy 62 55))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0133333-3333-4333-8333-333333333334")
+	)
+	(wire
+		(pts (xy 62 55) (xy 62 43))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0144444-4444-4444-8444-444444444445")
+	)
+	(wire
+		(pts (xy 87 24) (xy 110 24))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0155555-5555-4555-8555-555555555556")
+	)
+	(wire
+		(pts (xy 110 24) (xy 110 56))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0166666-6666-4666-8666-666666666667")
+	)
+	(wire
+		(pts (xy 110 56) (xy 87 56))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0177777-7777-4777-8777-777777777778")
+	)
+	(wire
+		(pts (xy 87 56) (xy 87 24))
+		(stroke (width 0.3) (type solid))
+		(uuid "b0188888-8888-4888-8888-888888888889")
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

@@ -1,0 +1,32 @@
+* Reduced-component 600 MHz RF/latch reference path
+.title Optimized entanglement circuit: 600 MHz oscillator, mixer, latch, outputs
+.param VCC=5
+.param OSCILLATOR_HZ=600Meg
+
+V_SUPPLY vcc 0 {VCC}
+V_RF_600M rf_clock 0 SINE(2.5 2.5 {OSCILLATOR_HZ})
+V_CTRL ctrl 0 0.5
+
+B_ENT_A ent_a 0 V={2.5+2.0*tanh((V(rf_clock)-2.5)/2.0)}
+B_ENT_B ent_b 0 V={2.5+2.0*tanh((V(rf_clock)-2.5)/2.08)}
+B_SUP superposition 0 V={(1-V(ctrl))*0.5*(V(ent_a)+V(ent_b))+V(ctrl)*V(ent_a)}
+B_COLLAPSE collapsed 0 V={5*u(V(superposition)-2.5)}
+B_SAMPLE sample_hold 0 V={V(collapsed)}
+B_MEASURED measured 0 V={V(sample_hold)}
+
+B_OUT0 led0 0 V={5*u(V(measured)-2.5)}
+B_OUT1 led1 0 V={5*u(V(superposition)-2.5)}
+B_OUT2 led2 0 V={5*u(V(ent_a)-2.5)}
+B_OUT3 led3 0 V={5*u(V(ent_b)-2.5)}
+B_OUT4 led4 0 V={5*u(V(rf_clock)-2.5)}
+B_OUT5 led5 0 V={5*u(V(ctrl)-2.5)}
+B_OUT6 led6 0 V={5*u(V(ent_a)-2.5)}
+B_OUT7 led7 0 V={5*u(V(ent_b)-2.5)}
+
+.control
+set filetype=ascii
+tran 1p 20n 0 1p
+write entanglement_optimized.raw v(rf_clock) v(ent_a) v(ent_b) v(superposition) v(measured)
+.endc
+.end
+
